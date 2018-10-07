@@ -21,7 +21,7 @@ accessed, it would switch with item at position `25`, then `12`, then `6`, `3`,`
 Speeds
 =============
 
-`RandUnsynched` tests the speed and hit/miss ratio of an non threadsafe cache. Higher numbers for
+`RandUnsynched` tests the speed and hit/miss ratio of an non-threadsafe cache. Higher numbers for
 ratio is better
 ```
 BenchmarkLRU_RandUnsynched-4   	 5000000	       363 ns/op	      60 B/op	       3 allocs/op
@@ -33,7 +33,7 @@ BenchmarkLRU_RandUnsynched-4   	 5000000	       363 ns/op	      60 B/op	       3
 	lruish_test.go:33: hit: 1249566 miss: 3750434 ratio: 0.333179
 ```
 
-`RandSynched` tests the speed and hit/miss ratio of the threadsave cache.
+`RandSynched` tests the speed and hit/miss ratio of the threadsafe cache.
 
 ```
 BenchmarkLRU_RandSynched-4     	 3000000	       505 ns/op	      60 B/op	       3 allocs/op
